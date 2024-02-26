@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forecast | The Health Advice Group</title>
+	  
+  <!-- Bootstrap link-->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+	  
+/*css links to change active link colour*/
+  a:link {
+    color: #333;
+    text-decoration: none;
+}
+  a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: #333;
+}
+a:active {
+    text-decoration: none;
+  </style>
+</head>
+	
+	
+  <body style="padding-top: 70px">
+  	<!-- body code goes here -->
+
+<!--Navbar-->
+<!--title with image and background colour-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.php"> <img src = "images/logo.PNG" width = "50px" height = "auto" alt = ""/> The Health Advice Group</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"></button>
+	<!--div class to align nav links-->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	      <ul class="navbar-nav mr-auto">
+			 
+	    <a href="forecast.html" class="btn">Forecast |</a>
+      <a href="seasons.html" class="btn">Seasons |</a>
+	   <a href="contact.php" class="btn">Home risk assessment |</a>
+	  <a href="contact.php" class="btn">Contact |</a>
+	  <a href="logout.php" class="btn">Logout |</a>
+			   </ul>
+			  </div>
+	
+<!--End of Navbar-->	  
+</nav>
+
+<!--breaks before page content-->
+<br><br>
+<center>
+<!--grid row to hold weather forecast-->
+<div class="row">
+  <div class="col-xl-12">
+    <div class="jumbotron">
+		
+	<!--title of jumbotron-->
+      <h1 class="display-4">Weather Forecast</h1>
+
+	  <!--weather forecast link-->
+      <hr class="my-4">
+      <p><iframe width="650" height="450" src="https://embed.windy.com/embed2.html?lat=53.753&lon=-2.359&detailLat=53.753&detailLon=-2.359&width=650&height=450&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=mph&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>	 </p>
+     
+    </div>
+  </div>
+</div>
+ 
+	
+<!--grid row to hold air quality-->	  
+<div class="row">
+  <div class="col-xl-12">
+    <div class="jumbotron">
+	
+   <!--title of jumbotron-->
+   <h1 class="display-4">Air Quality</h1>
+      <hr class="my-4">
+	
+	<!--air quality script (tomorrow.io)-->
+      <p><script>
+        (function(d, s, id) {
+            if (d.getElementById(id)) {
+                if (window.__TOMORROW__) {
+                    window.__TOMORROW__.renderWidget();
+                }
+                return;
+            }
+            const fjs = d.getElementsByTagName(s)[0];
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'tomorrow-sdk');
+        </script>
+
+        <div class="tomorrow"
+           data-location-id=""
+           data-language="EN"
+           data-unit-system="METRIC"
+           data-skin="light"
+           data-widget-type="aqiPollutant"
+           style="padding-bottom:22px;position:relative;"
+        >
+          <a
+            href="https://www.tomorrow.io/weather-api/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+            style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
+          >
+            <img
+              alt="Powered by the Tomorrow.io Weather API"
+              src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+              width="250"
+              height="18"
+            />
+          </a>
+        </div></p>
+ 
+    </div>
+  </div>
+</div>
+</center>
+	  
+<!--footer containing legal docs-->
+  <footer>
+    <div class="row1">
+	
+      <div class="col-xl-3"><center><a href = "terms_conditions.html">Terms and Conditions</a></center></div>
+      <div class="col-xl-3"><center><a href = "privacy_policy.html">Privacy Policy</a></center></div>
+      <div class="col-xl-3"><center><a href = "cookies.html">Cookies</a></center></div>
+      <div class="col-xl-3"><center><a href = "accessibility.html"> Accessibility</a></center></div>	 
+    </div>
+	  
+	 <!--copyright-->
+	<center><h5>Copyright - The Health Advice Group ©</h5></center>
+
+  </footer>
+	  
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

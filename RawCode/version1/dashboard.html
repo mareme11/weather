@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+	 <!--Title-->
+    <title>Dashboard | The Health Advice Group</title>
+	  
+	 <!--adding css social media icon link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  </head>
+  <body style="padding-top: 70px; padding-bottom: 70px;">
+	  
+	  
+  	<!-- body code goes here -->
+	  
+	  
+  <!--Navbar-->
+	  <!--adding logo with active link behind-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.html"><img src = "images/logo.PNG" height = "50px" width = "50px" alt = ""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <ul class="navbar-nav mr-auto">
+			
+		<!--title on navbar-->
+        <a class="navbuttons">The Health Advice Group |<span class="sr-only">(current)</span></a>
+			
+		<!--active links to each page-->
+         <a class = "navbuttons" href="dashboard.html"> Dashboard</a>
+	    <a class = "navbuttons" href="season.html"> Seasons</a>
+		<a class = "navbuttons" href="contact.html"> Contact Us</a>
+		<a class = "navbuttons" href="terms_conditions.html"> Terms and conditions</a>
+			
+		 <!--adding social media links on the right in the navbar-->
+			<div class = "right-nav">
+				<a href="#"><img src = "images/twitter_logo.png" width = "50px" height= "auto" class="rounded" alt = ""></a>
+				<a href="#"><img src = "images/facebook_logo.PNG" width = "50px" height= "auto" alt = ""></a>
+				</div>
+			
+	    		</ul>
+			  </div>
+  </nav>
+<br><br><br>
+<center><div class = "text">The Health Advice Group</div></center>
+	  
+	  
+	  	  
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="jumbotron">
+        <h1 class="display-4"><center>Air Quality</center></h1>
+        <p class="lead">
+			
+			<script>
+        (function(d, s, id) {
+            if (d.getElementById(id)) {
+                if (window.__TOMORROW__) {
+                    window.__TOMORROW__.renderWidget();
+                }
+                return;
+            }
+            const fjs = d.getElementsByTagName(s)[0];
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'tomorrow-sdk');
+        </script>
+
+        <div class="tomorrow"
+           data-location-id=""
+           data-language="EN"
+           data-unit-system="METRIC"
+           data-skin="light"
+           data-widget-type="aqiMini"
+           style="padding-bottom:22px;position:relative;"> </div></p>
+     	 
+    </div>
+	
+  </div>
+        
+      </div>
+    
+
+
+	  
+
+	
+	
+	  
+  <div class="row">
+	    <div class="col-xl-12">
+	      <div class="jumbotron">
+			  <h1 class="display-4"><div class = "text">Forecast</div></h1>
+			  <br><br>
+	      <p class="lead">
+			  <iframe src="https://www.meteoblue.com/en/weather/maps/widget?windAnimation=0&windAnimation=1&gust=0&gust=1&satellite=0&satellite=1&cloudsAndPrecipitation=0&cloudsAndPrecipitation=1&temperature=0&temperature=1&sunshine=0&sunshine=1&extremeForecastIndex=0&extremeForecastIndex=1&geoloc=detect&tempunit=C&windunit=km%252Fh&lengthunit=metric&zoom=7&autowidth=auto"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 100%; height: 620px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/maps/index?utm_source=weather_widget&utm_medium=linkus&utm_content=map&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener"></a></div></p>
+          </div>
+	    </div>
+  </div>
+	
+
+
+	
+	
+<!--footer-->
+  <footer>
+    
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

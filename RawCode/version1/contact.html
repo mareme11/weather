@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+		 <!--social media icon css link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  
+	 <!--title-->
+    <title>Contact | Health Advice Group</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	
+  </head>
+  <body>
+	  
+	  <!-- body code goes here -->
+	  
+	  
+	  <!--Navbar-->
+	  <!--adding logo with active link behind-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.html"><img src = "images/logo.PNG" height = "50px" width = "50px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <ul class="navbar-nav mr-auto">
+			
+		<!--title on navbar-->
+        <a class="navbuttons">The Health Advice Group |<span class="sr-only">(current)</span></a>
+			
+		<!--active links to each page-->
+         <a class = "navbuttons" href="dashboard.html"> Dashboard</a>
+	    <a class = "navbuttons" href="seasons.html"> Seasons</a>
+		<a class = "navbuttons" href="contact.html"> Contact Us</a>
+		<a class = "navbuttons" href="terms_conditions.html"> Terms and conditions</a>
+			
+		 <!--adding social media links on the right in the navbar-->
+			<div class = "right-nav">
+				<a href="#"><img src = "images/twitter_logo.png" width = "50px" height= "auto" class="rounded"></a>
+				<a href="#"><img src = "images/facebook_logo.PNG" width = "50px" height= "auto"></a>
+				</div>
+			
+	    		</ul>
+			  </div>
+  </nav>
+	  
+	<div class = "center">
+	<br>
+		
+	 <!--centering image and title-->
+	<center><h2><img src = "images/logo.PNG" height = "50px" width = "50px"> Health Advice Group</h2></center>
+
+		<!--contact us title on form -->  
+ 			<h1>Contact Us</h1>
+	
+		<!--creating the form-->
+		  <form id = "contact_form">
+		<!--username section on form-->
+		  <div class = "txt_field">
+	 	<!--form control to add border around the input-->
+			  <input type = "text" class="form-control"  required>
+			  <span></span>
+			  <label>Username</label>
+		  </div>
+			  
+		<!--password section on form-->
+			 <div class = "txt_field"> 
+		<!--form control to add border around the input-->
+			  <input type = "password" class="form-control" required>
+				 <span></span>
+				 <label>Password</label>
+		  </div>
+		  
+		<!--message section on form-->	  
+			<div class = "txt_field"> 
+		<!--adding rows for user to input-->
+			  <input type = "message" class="form-control" row="4" required>
+				 <span></span>
+		<!--message label-->
+				 <label>Message</label>
+		  </div>
+		
+		<!--submit form button-->
+		<input type = "submit" value = "Send">
+			  
+		  <!--break to move form down-->
+	 		<br> <br> 
+			  
+	<!--ending form-->		 
+	</form>
+	  </div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
